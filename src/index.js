@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
-  return <div>react template</div>
+  return <div>react template hot reload</div>
 }
 
 

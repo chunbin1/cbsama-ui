@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Demo1 from './example/Demo1'
 
 const App = () => {
-  return <div>react template hot reload</div>
+  return <div>
+    <Demo1></Demo1>
+  </div>
 }
 
 

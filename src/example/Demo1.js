@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import RandomOrderArticles from "../components/RandomOrderArticles";
+import {BuildTest} from 'cbsama-ui'
 
 export default class demo1 extends Component {
   render() {
     return (
-      <div style={{ position: "relative" }}>
-        <RandomOrderArticles
-          wordWidth={20}
-          articles="const Button = styled.a`
+      <div>
+        <BuildTest/>
+        <div>demo1</div>
+        <div style={{ position: "relative" }}>
+          <RandomOrderArticles
+            wordWidth={20}
+            articles="const Button = styled.a`
           /* This renders the buttons above... Edit me! */
           display: inline-block;
           border-radius: 3px;
@@ -25,7 +29,8 @@ export default class demo1 extends Component {
             color: palevioletred;
           `}
         `"
-        ></RandomOrderArticles>
+          ></RandomOrderArticles>
+        </div>
       </div>
     );
   }

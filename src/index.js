@@ -1,12 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Demo1 from './example/Demo1'
+import RandomOrderArticles from './components/RandomOrderArticles'
+import BuildTest from './components/BuildTest'
 
-const App = () => {
-  return <div>
-    <Demo1></Demo1>
-  </div>
-}
-
-
-ReactDOM.render(<App />, document.getElementById('root'));
+export {RandomOrderArticles,BuildTest}

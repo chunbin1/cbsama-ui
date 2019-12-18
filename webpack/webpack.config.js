@@ -3,11 +3,12 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const BASEPATH = __dirname
 const SRCPATH = path.join(__dirname,'../src')
-
+const NODE_ENV = process.env.NODE_ENV
+const entryPath = NODE_ENV==='development'?path.join(__dirname, "../src/test.js"):path.join(__dirname, "../index.js")
 module.exports = {
   // 应用入口
   entry: {
-    app: path.join(__dirname, "../src/index.js"), // app.js作为打包的入口
+    app: entryPath, // app.js作为打包的入口
   },
   // 输出目录
   output: {

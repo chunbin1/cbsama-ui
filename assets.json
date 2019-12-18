@@ -1,7 +1,7 @@
 {
-  "vendors.css": "https://aledenn.github.io/cbsama-ui/static/css/vendors.cbab6e473e75b1de1631.css",
-  "vendors.js": "https://aledenn.github.io/cbsama-ui/static/js/vendors.47852eba.js",
-  "app.js": "https://aledenn.github.io/cbsama-ui/static/js/app.cbab6e473e75b1de1631.js",
-  "documents-test.js": "https://aledenn.github.io/cbsama-ui/static/js/documents-test.360c4327.js",
-  "index.html": "https://aledenn.github.io/cbsama-ui/index.html"
+  "vendors.css": "/cbsama-ui/static/css/vendors.a2bb1bc2695086cdeeff.css",
+  "vendors.js": "/cbsama-ui/static/js/vendors.17a11e46.js",
+  "app.js": "/cbsama-ui/static/js/app.a2bb1bc2695086cdeeff.js",
+  "documents-test.js": "/cbsama-ui/static/js/documents-test.360c4327.js",
+  "index.html": "/cbsama-ui/index.html"
 }

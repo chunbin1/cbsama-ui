@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RandomOrderArticles from "../components/RandomOrderArticles";
+import RandomOrderArticles from "@/components/RandomOrderArticles";
 import {BuildTest} from 'cbsama-ui'
 
 export default class demo1 extends Component {

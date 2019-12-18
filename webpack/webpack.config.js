@@ -2,9 +2,9 @@ const path = require("path"); // 引入‘path’，为了在这里使用绝对�
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const BASEPATH = __dirname
-const SRCPATH = path.join(__dirname,'../src')
+const SRCPATH = path.join(__dirname,'../example')
 const NODE_ENV = process.env.NODE_ENV
-const entryPath = NODE_ENV==='development'?path.join(__dirname, "../src/test.js"):path.join(__dirname, "../index.js")
+const entryPath = NODE_ENV==='development'?path.join(__dirname, "../example/test.js"):path.join(__dirname, "../index.js")
 module.exports = {
   // 应用入口
   entry: {
@@ -26,6 +26,12 @@ module.exports = {
         ],
       },
     ],
+  },
+
+  resolve:{
+    alias:{
+      "@":path.resolve(__dirname,'../src/')
+    }
   },
 
   devServer: {

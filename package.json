@@ -6,9 +6,17 @@
   "module": "es/index.es.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.js --mode development",
-    "build": "webpack --config webpack/webpack.config.js --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "father build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc:dev":"father doc dev",
+    "doc:build":"father doc build",
+    "doc:deploy":"father doc deploy"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Aledenn/cbsama-ui.git"
+  },
+  "bugs": "https://github.com/Aledenn/cbsama-ui/issues",
   "keywords": [
     "react",
     "articles"

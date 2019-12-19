@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const Word = styled.span`
+const Word = styled.span.attrs(props => ({
+  style: {
+    left: `${props.left}px`,
+    top: `${props.top}px`
+  }
+}))`
   position: absolute;
-  left: ${props => props.left}px;
-  top: ${props => props.top}px;
+`;
+
+const Container = styled.div`
+  position: relative;
 `;
 
 function upsetArr(arr) {
@@ -21,7 +28,8 @@ function getPosition(articlesWithIdx, width, wordWidth) {
     return {
       left: Math.floor(idx % count) * wordWidth,
       top: Math.floor(idx / count) * height,
-      word
+      word,
+      key: idx
     };
   });
   return ret;
@@ -40,15 +48,14 @@ class RandomOrderArticles extends Component {
       width,
       wordWidth
     );
-    console.log(randomArticlesWithPosition);
     return (
-      <div>
+      <Container className="cb-RandomOrderArticles-container">
         {randomArticlesWithPosition.length !== 0 &&
           randomArticlesWithPosition.map(wordObj => {
             const { word, ...restProps } = wordObj;
             return <Word {...restProps}>{word}</Word>;
           })}
-      </div>
+      </Container>
     );
   }
 }

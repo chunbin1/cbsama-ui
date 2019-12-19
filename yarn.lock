@@ -3421,6 +3421,38 @@
     stylelint-declaration-block-no-ignored-properties "^2.1.0"
     stylelint-order "^3.0.0"
 
+"@umijs/fabric@^1.2.12":
+  version "1.2.12"
+  resolved "https://registry.npmjs.org/@umijs/fabric/-/fabric-1.2.12.tgz#66f775e5bda0e46ea24e70d9ddb4f5314ff4f338"
+  integrity sha512-3JbjCFWNKM++QZgHtzJMMQ7kH7I4SREUlizdCvulVWzMw9QWMovzNPXFueOHASMmSEEURbpQbL3mCIG/wkJ8Lg==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^1.4.2"
+    "@typescript-eslint/parser" "^2.11.0"
+    eslint "^5.16.0"
+    eslint-config-airbnb "^17.1.0"
+    eslint-config-airbnb-base "^13.1.0"
+    eslint-config-airbnb-typescript "^4.0.0"
+    eslint-config-prettier "^4.1.0"
+    eslint-formatter-pretty "^2.1.1"
+    eslint-plugin-babel "^5.3.0"
+    eslint-plugin-compat "^3.1.1"
+    eslint-plugin-eslint-comments "^3.1.1"
+    eslint-plugin-import "^2.18.2"
+    eslint-plugin-jest "^22.4.1"
+    eslint-plugin-jsx-a11y "^6.2.0"
+    eslint-plugin-markdown "^1.0.0"
+    eslint-plugin-promise "^4.1.1"
+    eslint-plugin-react "^7.13.0"
+    eslint-plugin-react-hooks "^1.6.0"
+    eslint-plugin-unicorn "^8.0.1"
+    stylelint "^10.0.1"
+    stylelint-config-css-modules "^1.4.0"
+    stylelint-config-prettier "^5.2.0"
+    stylelint-config-rational-order "^0.1.2"
+    stylelint-config-standard "^18.3.0"
+    stylelint-declaration-block-no-ignored-properties "^2.1.0"
+    stylelint-order "^3.0.0"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.npm.taobao.org/@webassemblyjs/ast/download/@webassemblyjs/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -12308,7 +12340,7 @@ less-plugin-npm-import@2.1.0:
     promise "~7.0.1"
     resolve "~1.1.6"
 
-"less@2.6.x || ^3.7.1", less@^3.8.1:
+"less@2.6.x || ^3.7.1", less@^3.10.3, less@^3.8.1:
   version "3.10.3"
   resolved "https://registry.npm.taobao.org/less/download/less-3.10.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fless%2Fdownload%2Fless-3.10.3.tgz#417a0975d5eeecc52cff4bcfa3c09d35781e6792"
   integrity sha1-QXoJddXu7MUs/0vPo8CdNXgeZ5I=
@@ -12328,22 +12360,6 @@ less@3.9.0:
   version "3.9.0"
   resolved "https://registry.npm.taobao.org/less/download/less-3.9.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fless%2Fdownload%2Fless-3.9.0.tgz#b7511c43f37cf57dc87dffd9883ec121289b1474"
   integrity sha1-t1EcQ/N89X3Iff/ZiD7BISibFHQ=
-  dependencies:
-    clone "^2.1.2"
-  optionalDependencies:
-    errno "^0.1.1"
-    graceful-fs "^4.1.2"
-    image-size "~0.5.0"
-    mime "^1.4.1"
-    mkdirp "^0.5.0"
-    promise "^7.1.1"
-    request "^2.83.0"
-    source-map "~0.6.0"
-
-less@^3.10.3:
-  version "3.10.3"
-  resolved "https://registry.npmjs.org/less/-/less-3.10.3.tgz#417a0975d5eeecc52cff4bcfa3c09d35781e6792"
-  integrity sha512-vz32vqfgmoxF1h3K4J+yKCtajH0PWmjkIFgbs5d78E/c/e+UQTnI+lWK+1eQRE95PXM2mC3rJlLSSP9VQHnaow==
   dependencies:
     clone "^2.1.2"
   optionalDependencies:

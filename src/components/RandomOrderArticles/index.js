@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 const Word = styled.span.attrs(props => ({
   style: {
     left: `${props.left}px`,
-    top: `${props.top}px`
-  }
+    top: `${props.top}px`,
+  },
 }))`
   position: absolute;
 `;
@@ -29,7 +29,7 @@ function getPosition(articlesWithIdx, width, wordWidth) {
       left: Math.floor(idx % count) * wordWidth,
       top: Math.floor(idx / count) * height,
       word,
-      key: idx
+      key: idx,
     };
   });
   return ret;
@@ -37,23 +37,23 @@ function getPosition(articlesWithIdx, width, wordWidth) {
 
 class RandomOrderArticles extends Component {
   render() {
-    const { articles = "", width = 800, wordWidth = 14 } = this.props;
+    const { articles = '', width = 800, wordWidth = 14 } = this.props;
     const articlesWithIdx = Array.prototype.map.call(articles, (word, idx) => ({
       word,
-      idx
+      idx,
     }));
     const randomArticles = upsetArr(articlesWithIdx);
-    const randomArticlesWithPosition = getPosition(
-      randomArticles,
-      width,
-      wordWidth
-    );
+    const randomArticlesWithPosition = getPosition(randomArticles, width, wordWidth);
     return (
       <Container className="cb-RandomOrderArticles-container">
         {randomArticlesWithPosition.length !== 0 &&
           randomArticlesWithPosition.map(wordObj => {
             const { word, ...restProps } = wordObj;
-            return <Word {...restProps}>{word}</Word>;
+            return (
+              <Word className="cb-RandomOrderArticles-word" {...restProps}>
+                {word}
+              </Word>
+            );
           })}
       </Container>
     );

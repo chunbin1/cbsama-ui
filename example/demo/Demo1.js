@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import RandomOrderArticles from "@/components/RandomOrderArticles";
-import './demo1.less'
+import "./demo1.less";
 
 export default class demo1 extends Component {
   render() {

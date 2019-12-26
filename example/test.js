@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Demo1 from './demo/Demo1'
+import DemoMessArticles from './demo/Demo1';
+import DemoErrorBoundary from './DemoErrorrBoundary';
 
 const App = () => {
-  return <div>
-    <Demo1></Demo1>
-  </div>
-}
-
+  return (
+    <div>
+      <DemoErrorBoundary />
+      {/* <DemoMessArticles /> */}
+    </div>
+  );
+};
 
 ReactDOM.render(<App />, document.getElementById('root'));

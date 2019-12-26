@@ -1,3 +1,8 @@
 /node_modules
 /build
 *.log
+/.docz
+/dist
+/es
+/.doc
+/.vscode

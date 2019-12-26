@@ -2,12 +2,13 @@ const path = require("path"); // 引入‘path’，为了在这里使用绝对�
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const BASEPATH = __dirname
-const SRCPATH = path.join(__dirname,'../src')
-
+const SRCPATH = path.join(__dirname,'../example')
+const NODE_ENV = process.env.NODE_ENV
+const entryPath = NODE_ENV==='development'?path.join(__dirname, "../example/test.js"):path.join(__dirname, "../index.js")
 module.exports = {
   // 应用入口
   entry: {
-    app: path.join(__dirname, "../src/index.js"), // app.js作为打包的入口
+    app: entryPath, // app.js作为打包的入口
   },
   // 输出目录
   output: {
@@ -24,7 +25,21 @@ module.exports = {
           path.join(__dirname, "../node_modules"), // 由于node_modules都是编译过的文件，这里我们不让babel去处理其下面的js文件
         ],
       },
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'less-loader'
+        ]
+      }
     ],
+  },
+
+  resolve:{
+    alias:{
+      "@":path.resolve(__dirname,'../src/')
+    }
   },
 
   devServer: {

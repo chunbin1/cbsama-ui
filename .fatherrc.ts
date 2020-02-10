@@ -10,6 +10,9 @@ const options: IBundleOptions = {
       react: 'React',
     },
   },
+  doc: {
+    base: '/cbsama-ui/',
+  },
   disableTypeCheck: true,
   preCommit: {
     eslint: true,

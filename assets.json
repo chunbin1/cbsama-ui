@@ -1,7 +1,8 @@
 {
-  "vendors.css": "/cbsama-ui/static/css/vendors.a2bb1bc2695086cdeeff.css",
-  "vendors.js": "/cbsama-ui/static/js/vendors.17a11e46.js",
-  "app.js": "/cbsama-ui/static/js/app.a2bb1bc2695086cdeeff.js",
-  "documents-test.js": "/cbsama-ui/static/js/documents-test.360c4327.js",
-  "index.html": "/cbsama-ui/index.html"
+  "vendors.css": "/static/css/vendors.3065c07fded9ae5a89d4.css",
+  "vendors.js": "/static/js/vendors.c85049c5.js",
+  "app.js": "/static/js/app.3065c07fded9ae5a89d4.js",
+  "src-components-build-test-test.js": "/static/js/src-components-build-test-test.12a36b53.js",
+  "src-components-loading-index-zh-cn.js": "/static/js/src-components-loading-index-zh-cn.fabb3cc0.js",
+  "index.html": "/index.html"
 }

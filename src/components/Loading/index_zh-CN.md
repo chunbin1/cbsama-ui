@@ -2,6 +2,7 @@
 name: Loading
 edit: false
 sidebar: true
+route: /Loading
 ---
 
 import Demo1 from './demo/demo1'

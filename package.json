@@ -1,13 +1,14 @@
 {
   "name": "cbsama-ui",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "make articles out of order but display normal",
   "main": "es/index.js",
   "module": "es/index.js",
   "scripts": {
     "dev": "father doc dev",
-    "build": "father build",
-    "test": "echo \"Error: no test specified\"",
+    "build": "father build && tsc --declarationDir ./lib && tsc --declarationDir ./es && node ./scripts/build-wind-up.js",
+    "test": "father test",
+    "precommit": "father pre-commit",
     "doc:dev": "father doc dev",
     "doc:build": "father doc build",
     "doc:deploy": "father doc deploy"
@@ -47,6 +48,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^3.4.0",
+    "del": "^5.1.0",
     "father": "^2.29.1",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.10.3",

@@ -16,7 +16,10 @@ const wave = keyframes`
 `;
 
 const LoadingContainer = styled.div`
-  display: flex;
+  display: none;
+  &.show {
+    display: flex;
+  }
   animation-delay: 1s;
   .dot {
     position: relative;
@@ -51,12 +54,8 @@ interface IProps {
   loading: boolean;
 }
 
-const Isshow = styled.div`
-  display: ${(props: IProps) => (props.loading ? 'flex' : 'none')};
-`;
-
-const Loading: SFC<IProps> = ({ loading }) => (
-  <LoadingContainer loading={loading} as={Isshow}>
+const Loading: SFC<IProps> = ({ loading = false }) => (
+  <LoadingContainer className={loading === true ? 'show' : ''}>
     <div className="dot"></div>
     <div className="dot"></div>
     <div className="dot"></div>

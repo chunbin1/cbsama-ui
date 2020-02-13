@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading loading 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa jjICzf show"
+  >
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+  </div>
+</div>
+`;
+
+exports[`Loading no loading 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa jjICzf"
+  >
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+  </div>
+</div>
+`;

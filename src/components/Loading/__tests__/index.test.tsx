@@ -12,4 +12,9 @@ describe('Loading', () => {
     const { container } = render(<Loading loading />);
     expect(container).toMatchSnapshot();
   });
+
+  test('className', () => {
+    const { container } = render(<Loading className="cbsama" loading />);
+    expect(container).toMatchSnapshot();
+  });
 });

@@ -1,5 +1,6 @@
 import React, { SFC } from 'react';
 import styled, { keyframes } from 'styled-components';
+import classnames from 'classnames';
 
 const colors = ['#7ef9ff', '#89cff0', '#4682b4', '#0f52ba', '#000080'];
 
@@ -52,10 +53,15 @@ const LoadingContainer = styled.div`
 
 interface IProps {
   loading: boolean;
+  className?: string;
 }
 
-const Loading: SFC<IProps> = ({ loading = false }) => (
-  <LoadingContainer className={loading === true ? 'show' : ''}>
+const Loading: SFC<IProps> = ({ loading = false, className }) => (
+  <LoadingContainer
+    className={classnames(className, {
+      show: loading === true,
+    })}
+  >
     <div className="dot"></div>
     <div className="dot"></div>
     <div className="dot"></div>

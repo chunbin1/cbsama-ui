@@ -1,5 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Loading className 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa jjICzf cbsama show"
+  >
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+    <div
+      class="dot"
+    />
+  </div>
+</div>
+`;
+
 exports[`Loading loading 1`] = `
 <div>
   <div

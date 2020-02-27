@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HighlightKeywords can render 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa kOFPiE tupu-input"
+  >
+    正常使用
+  </div>
+</div>
+`;
+
+exports[`HighlightKeywords className 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa kOFPiE tupu-input"
+  >
+    换个类名
+  </div>
+</div>
+`;
+
+exports[`HighlightKeywords keywords 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa kOFPiE"
+  >
+    <span />
+    <span
+      class="highlight"
+    >
+      这是
+    </span>
+    <span>
+      一个
+    </span>
+    <span
+      class="highlight"
+    >
+      关键词
+    </span>
+    <span />
+  </div>
+</div>
+`;

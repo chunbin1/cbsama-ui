@@ -14,8 +14,9 @@ describe('HighlightKeywords', () => {
   });
 
   test('keywords', () => {
-    // const { cantainer } = render(
-    //   <HightlightKeywords words="这是一个关键词" keywords={['关键词', '这是']} />,
-    // );
+    const { container } = render(
+      <HightlightKeywords words="这是一个关键词" keywords={['关键词', '这是']} />,
+    );
+    expect(container).toMatchSnapshot();
   });
 });

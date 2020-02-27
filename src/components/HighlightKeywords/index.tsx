@@ -2,12 +2,13 @@
  * @Author: licb
  * @Date: 2020-02-16 14:59:09
  * @Last Modified by: licb
- * @Last Modified time: 2020-02-20 14:58:15
+ * @Last Modified time: 2020-02-27 17:32:12
  */
 //  这是一个用来显示高亮的组件
 
 import React, { SFC } from 'react';
 import styled from 'styled-components';
+import { getKey } from '../../utils/utils';
 
 const Container = styled.div`
   color: #3c4655;
@@ -39,11 +40,11 @@ const HighlightKeywords: SFC<IProps> = ({ keywords = [], words, className }) => 
   const token = words.replace(reg, `#${FLAG}$&#`); // $&表示最后匹配的那个
   const elements = token.split('#').map((x, index) =>
     x[0] === FLAG ? (
-      <span key={`${index}${x}`} className="highlight">
+      <span key={getKey(`${index}${x}`)} className="highlight">
         {x.slice(1)}
       </span>
     ) : (
-      <span key={`${index}${x}`}>{x}</span>
+      <span key={getKey(`${index}${x}`)}>{x}</span>
     ),
   );
 

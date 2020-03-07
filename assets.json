@@ -1,8 +1,11 @@
 {
-  "vendors.css": "/cbsama-ui/static/css/vendors.08f64106e108e660e950.css",
-  "vendors.js": "/cbsama-ui/static/js/vendors.fc68d885.js",
-  "app.js": "/cbsama-ui/static/js/app.08f64106e108e660e950.js",
-  "src-components-build-test-test.js": "/cbsama-ui/static/js/src-components-build-test-test.12a36b53.js",
-  "src-components-loading-index-zh-cn.js": "/cbsama-ui/static/js/src-components-loading-index-zh-cn.fabb3cc0.js",
+  "vendors.css": "/cbsama-ui/static/css/vendors.7a6ab5cd48de45a21ce1.css",
+  "vendors.js": "/cbsama-ui/static/js/vendors.e6f33595.js",
+  "app.js": "/cbsama-ui/static/js/app.7a6ab5cd48de45a21ce1.js",
+  "readme.js": "/cbsama-ui/static/js/readme.d44e0432.js",
+  "src-components-build-test-test.js": "/cbsama-ui/static/js/src-components-build-test-test.4812e19d.js",
+  "src-components-highlight-keywords-index-zh-cn.js": "/cbsama-ui/static/js/src-components-highlight-keywords-index-zh-cn.c728022b.js",
+  "src-components-loading-index-zh-cn.css": "/cbsama-ui/static/css/src-components-loading-index-zh-cn.7a6ab5cd48de45a21ce1.css",
+  "src-components-loading-index-zh-cn.js": "/cbsama-ui/static/js/src-components-loading-index-zh-cn.587b7955.js",
   "index.html": "/cbsama-ui/index.html"
 }

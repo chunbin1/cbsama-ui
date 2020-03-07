@@ -8,21 +8,25 @@ on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build-and-deploy:
-    # The type of runner that the job will run on
+  pre-deploy:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install
+        run: npm install
+      - name: test
+        run: npm test
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+  deploy-doc:
+    needs: pre-deploy
+    runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: npm and build
-        run: |
-          npm install
-          npm run doc:build
+      - name: build gh page
+        run: npm run doc:build
 
       - name: deploy gh page
         uses: Cecilapp/GitHub-Pages-deploy@master
@@ -32,17 +36,16 @@ jobs:
           BUILD_DIR: .doc/ # "_site/" by default
           CNAME: https://aledenn.github.io/ # in case of custom domain
 
-    deploy-npm:
-      steps:
-        - uses: actions/checkout@v2
+  deploy-npm:
+    needs: pre-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
 
-        # Runs a single command using the runners shell
-        - name: test
-          run: |
-            npm run test
-            npm run build
+      - name: build package
+        run: npm run build
 
-        - name: deploy npm
-        - uses: JS-DevTools/npm-publish@v1
-          with:
-            token: ${{ secrets.NPM_TOKEN }}
+      - name: deploy npm
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}

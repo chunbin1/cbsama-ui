@@ -36,7 +36,6 @@ jobs:
           EMAIL: 545360100@qq.com # must be a verified email
           GH_TOKEN: ${{ secrets.ACCESS_TOKEN }} # https://github.com/settings/tokens
           BUILD_DIR: .doc/ # "_site/" by default
-          CNAME: https://aledenn.github.io/ # in case of custom domain
 
   deploy-npm:
     needs: test

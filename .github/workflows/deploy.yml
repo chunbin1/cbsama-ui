@@ -31,3 +31,17 @@ jobs:
           GH_TOKEN: ${{ secrets.ACCESS_TOKEN }} # https://github.com/settings/tokens
           BUILD_DIR: .doc/ # "_site/" by default
           CNAME: https://aledenn.github.io/ # in case of custom domain
+
+    deploy-npm:
+      steps:
+        - uses: actions/checkout@v2
+
+        # Runs a single command using the runners shell
+        - name: test
+          run: |
+            npm run test
+
+        - name: deploy npm
+        - uses: JS-DevTools/npm-publish@v1
+          with:
+            token: ${{ secrets.NPM_TOKEN }}

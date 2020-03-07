@@ -1,6 +1,6 @@
 {
   "name": "cbsama-ui",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "make articles out of order but display normal",
   "main": "es/index.js",
   "module": "es/index.js",

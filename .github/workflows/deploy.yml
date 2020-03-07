@@ -40,6 +40,7 @@ jobs:
         - name: test
           run: |
             npm run test
+            npm run build
 
         - name: deploy npm
         - uses: JS-DevTools/npm-publish@v1

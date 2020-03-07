@@ -24,5 +24,10 @@ jobs:
           npm install
           npm run doc:build
 
-      - name: deploy
-        run: npm run doc:deploy
+      - name: deploy gh page
+        uses: Cecilapp/GitHub-Pages-deploy@master
+        env:
+          EMAIL: 545360100@qq.com # must be a verified email
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }} # https://github.com/settings/tokens
+          BUILD_DIR: build/ # "_site/" by default
+          CNAME: https://aledenn.github.io/ # in case of custom domain

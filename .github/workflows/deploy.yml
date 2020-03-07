@@ -25,4 +25,4 @@ jobs:
           npm run doc:build
 
       - name: deploy
-        run: npm doc:deploy
+        run: npm run doc:deploy

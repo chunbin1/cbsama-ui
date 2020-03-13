@@ -54,7 +54,6 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
 
       # Runs a single command using the runners shell
@@ -88,7 +87,6 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
 
       - name: build package

@@ -1,12 +1,10 @@
----
+<!-- ---
 name: Loading
 edit: false
 sidebar: true
 route: /Loading
----
+--- -->
 
-import Demo1 from './demo/demo1'; 
-import Demo2,{DemoCss} from './demo/demo2';
 
 # Loading
 
@@ -16,21 +14,27 @@ import Demo2,{DemoCss} from './demo/demo2';
 
 ### 基本使用
 
-<Demo1/>
+```jsx
+import React from 'react';
+import Loading from '.';
 
-```
 const DemoLoading = () => {
   return <Loading loading />;
 };
+
+export default DemoLoading;
 ```
 
 ### 自定义 sytle
-需要配合styled-components使用
+配合styled-components使用
 
-<Demo2/>
+<code src="./demo/demo1.tsx" />
 
-```
-import Loading from '..';
+
+```jsx
+import React from 'react';
+import Loading from '.';
+import styled from 'styled-components'
 
 const MyLoading = styled(Loading)`
   .dot {
@@ -39,24 +43,25 @@ const MyLoading = styled(Loading)`
   }
 `;
 
-const Demo2 = () => <MyLoading loading />;
+export default () => <MyLoading loading />
 ```
 
 或者直接通过className修改
-<DemoCss/>
 
-```
-import './index.less';
+```jsx
+import React from 'react';
+import Loading from '.';
+import './demo/index.less';
 
-DemoCss = () => <Loading loading className="demo_css" />
+export default () => <Loading loading className="demo_css" />
 
 // index.less
-.demo_css {
-  .dot {
-    height: 1em;
-    width: 1em;
-  }
-}
+// .demo_css {
+//   .dot {
+//     height: 1em;
+//     width: 1em;
+//   }
+// }
 ```
 
 

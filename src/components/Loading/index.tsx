@@ -62,11 +62,12 @@ const Loading: SFC<IProps> = ({ loading = false, className }) => (
       show: loading === true,
     })}
   >
-    <div className="dot"></div>
-    <div className="dot"></div>
-    <div className="dot"></div>
-    <div className="dot"></div>
-    <div className="dot"></div>
+    <div className="dot" />
+    <div className="dot" />
+    <div className="dot" />
+    <div className="dot" />
+    <div className="dot" />
+    <div className="dot" />
   </LoadingContainer>
 );
 

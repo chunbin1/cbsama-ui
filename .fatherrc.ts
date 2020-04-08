@@ -29,7 +29,6 @@ const options: IBundleOptions = {
   disableTypeCheck: true,
   preCommit: {
     eslint: true,
-    prettier: true,
   },
   pkgs: ['cbsama-ui'],
 };

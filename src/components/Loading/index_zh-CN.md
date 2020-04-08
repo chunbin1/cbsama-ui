@@ -1,11 +1,3 @@
-<!-- ---
-name: Loading
-edit: false
-sidebar: true
-route: /Loading
---- -->
-
-
 # Loading
 
 一个生动的 Loading 组件

@@ -5,7 +5,7 @@ sidebar: true
 route: /HightlightKeywords
 --- -->
 
-# HighlightKeywords
+# Keywords
 
 高亮keywords的组件
 
@@ -20,9 +20,9 @@ route: /HightlightKeywords
 ```jsx
 import React from 'react';
 import styled from 'styled-components'
-import { HighlightKeywords } from 'cbsama-ui';
+import { Keywords } from 'cbsama-ui';
 
-const YellowHightLight = styled(HighlightKeywords)`
+const YellowHightLight = styled(Keywords)`
   .highlight {
     background-color: yellow;
   }

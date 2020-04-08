@@ -8,8 +8,4 @@
 /.vscode
 /lib
 /coverage
-<<<<<<< HEAD
 .umi
-=======
-/src/.umi
->>>>>>> dumi-version

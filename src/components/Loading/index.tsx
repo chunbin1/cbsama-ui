@@ -67,7 +67,6 @@ const Loading: SFC<IProps> = ({ loading = false, className }) => (
     <div className="dot" />
     <div className="dot" />
     <div className="dot" />
-    <div className="dot" />
   </LoadingContainer>
 );
 

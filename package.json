@@ -12,9 +12,9 @@
     "test:watch": "father test --watch",
     "test:coverage": "father test --coverage",
     "precommit": "father pre-commit",
-    "doc:dev": "father doc dev",
-    "doc:build": "father doc build",
-    "doc:deploy": "father doc deploy"
+    "doc:dev": "dumi dev",
+    "doc:build": "dumi build",
+    "doc:deploy": "dumi deploy"
   },
   "repository": {
     "type": "git",

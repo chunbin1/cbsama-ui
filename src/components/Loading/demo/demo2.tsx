@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Loading from '..';
-import './index.less';
+import { Loading } from 'cbsama-ui';
 
 const MyLoading = styled(Loading)`
   .dot {
@@ -11,7 +10,5 @@ const MyLoading = styled(Loading)`
 `;
 
 const Demo2 = () => <MyLoading loading />;
-
-export const DemoCss = () => <Loading loading className="demo_css" />;
 
 export default Demo2;

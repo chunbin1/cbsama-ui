@@ -1,13 +1,3 @@
----
-name: Loading
-edit: false
-sidebar: true
-route: /Loading
----
-
-import Demo1 from './demo/demo1'; 
-import Demo2,{DemoCss} from './demo/demo2';
-
 # Loading
 
 一个生动的 Loading 组件
@@ -16,49 +6,31 @@ import Demo2,{DemoCss} from './demo/demo2';
 
 ### 基本使用
 
-<Demo1/>
+```jsx
+import React from 'react';
+import {Loading} from 'cbsama-ui';
 
-```
 const DemoLoading = () => {
   return <Loading loading />;
 };
+
+export default DemoLoading;
 ```
 
 ### 自定义 sytle
-需要配合styled-components使用
+配合styled-components使用
 
-<Demo2/>
-
-```
-import Loading from '..';
-
-const MyLoading = styled(Loading)`
-  .dot {
-    height: 1em;
-    width: 1em;
-  }
-`;
-
-const Demo2 = () => <MyLoading loading />;
-```
+<code src="./demo/demo2.tsx" />
 
 或者直接通过className修改
-<DemoCss/>
 
+```jsx
+import React from 'react';
+import { Loading } from 'cbsama-ui';
+// import './demo.css';
+
+export default () => <Loading loading className="demo_css" />;
 ```
-import './index.less';
-
-DemoCss = () => <Loading loading className="demo_css" />
-
-// index.less
-.demo_css {
-  .dot {
-    height: 1em;
-    width: 1em;
-  }
-}
-```
-
 
 ## API
 

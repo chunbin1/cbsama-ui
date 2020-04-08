@@ -1,10 +1,9 @@
----
+<!-- ---
 name: HightlightKeywords
 edit: false
 sidebar: true
 route: /HightlightKeywords
----
-import { Demo1,Demo2 } from "./demo/demo1"
+--- -->
 
 # HighlightKeywords
 
@@ -14,24 +13,25 @@ import { Demo1,Demo2 } from "./demo/demo1"
 
 ### 基本使用
 
-<Demo1/>
-
-```
-const Demo1 = () => <HightlightKeywords keywords={['关键词']} words="这是一个关键词组件" />;
-```
+<code src="./demo/demo1.tsx" />
 
 ### 自定义style
 
-<Demo2/>
+```jsx
+import React from 'react';
+import styled from 'styled-components'
+import { HighlightKeywords } from 'cbsama-ui';
 
-```
-const YellowHightLight = styled(HightlightKeywords)`
+const YellowHightLight = styled(HighlightKeywords)`
   .highlight {
     background-color: yellow;
   }
 `;
-const Demo2 = () => <YellowHightLight keywords={['关键词']} words="这是一个关键词组件" />;
+
+export default () => <YellowHightLight keywords={['关键词']} words="这是一个关键词组件" />;
+
 ```
+也可通过className修改样式
 
 ## API
 
